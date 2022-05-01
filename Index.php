@@ -41,7 +41,7 @@ switch ($method) {
     $imp = array();
     $tot = $sql->count();
 
-    $links ['first']['href']='http://localhost:8080/index.php?page=0&size='.$size; 
+    $links ['first']['href']=$index.'?page=0&size='.$size; 
     $links ['self']['href']=$index.'?page='.$page.'&size='.$size;
     $links ['next']['href']=$index.'?page='.($page+1).'&size='.$size;
     $links ['prev']['href']=$index.'?page='.($page-1).'&size='.$size;
